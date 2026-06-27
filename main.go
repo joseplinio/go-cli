@@ -8,12 +8,14 @@ import (
 
 func main() {
 	// NOTE: Showing up that the cli is working
-	welcome_message := welcomeMessage()
-	cli_message := toShowInitMessage()
+	// FIX: The variables's name are so bad, you need to improve this
+	// if you want, start to reread the book Clean Code
 
-	fmt.Printf("%v -- %v\n", cli_message, welcome_message)
+	greeting_message := greeting()
+	cli_message := firts_message()
+	fmt.Printf("%v -- %v\n", cli_message, greeting_message)
 }
-func toShowInitMessage() string {
+func firts_message() string {
 	text,
 		err := figlet.Text("go cli")
 	if err != nil {
@@ -21,7 +23,7 @@ func toShowInitMessage() string {
 	}
 	return text
 }
-func welcomeMessage() string {
+func greeting() string {
 	real_time := time.Now()
 	hours, _, _ := real_time.Clock()
 
