@@ -37,3 +37,17 @@ func write_file(file *os.File, data string) int {
 	}
 	return result
 }
+func get_hostname() string {
+	host_name, err := os.Hostname()
+	if err != nil {
+		log.Fatal(err)
+	}
+	return host_name
+}
+func get_user_home_dir() string {
+	user_home_dir, err := os.UserHomeDir()
+	if err != nil {
+		log.Panic(err)
+	}
+	return user_home_dir
+}
