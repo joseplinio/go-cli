@@ -16,3 +16,14 @@ func main() {
 	}
 }
 
+func open_file(name string) *os.File {
+	// FIX: I don't know what this "0666" mean
+	file, err := os.OpenFile(name, os.O_RDWR|os.O_CREATE, 0664)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if err := file.Close(); err != nil {
+		log.Fatal(err)
+	}
+	return file
+}
