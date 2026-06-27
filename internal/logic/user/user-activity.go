@@ -27,3 +27,13 @@ func open_file(name string) *os.File {
 	}
 	return file
 }
+
+// FIX: There'r some errors here but I don't know where they are. 
+func write_file(file *os.File, data string) int {
+	result, err := file.Write([]byte(data))
+	if err != nil {
+		file.Close() // ignore error; Write error takes precedence
+		log.Fatal(err)
+	}
+	return result
+}
