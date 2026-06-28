@@ -1,2 +1,4 @@
 github.com/damienbutt/figlet v0.1.0 h1:9SYFp9mYvohIG4IAtG18GD0/BSbNvj3QrSCR9ZJK9YM=
 github.com/damienbutt/figlet v0.1.0/go.mod h1:XQs9wP8IT0UIFK9ZXbUs4m0Q7Pre7QxMslepmqDUMNQ=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
